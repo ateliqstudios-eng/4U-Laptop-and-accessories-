@@ -100,10 +100,14 @@ nav .btn{min-height:42px;padding:0 16px;font-size:.95rem}
 /* gallery */
 .gal{display:grid;grid-template-columns:repeat(2,1fr);gap:22px}
 @media(min-width:820px){.gal{grid-template-columns:repeat(4,1fr)}}
-.gal figure{background:var(--card);border:1.5px solid var(--ink);box-shadow:var(--sh);padding:10px 10px 12px}
-.gal .ph{aspect-ratio:4/3;display:grid;place-items:center;text-align:center;border:1px dashed var(--line);color:var(--ink2);font:italic 400 .95rem var(--fb);padding:10px;background:repeating-linear-gradient(45deg,transparent 0 9px,rgba(43,39,33,.04) 9px 10px);position:relative;overflow:hidden}
+.gal figure{background:var(--card);border:1.5px solid var(--ink);box-shadow:var(--sh);padding:10px 10px 12px;display:flex;flex-direction:column}
+.gal .ph{aspect-ratio:4/5;position:relative;overflow:hidden;border:1px dashed var(--line);background:repeating-linear-gradient(45deg,transparent 0 9px,rgba(43,39,33,.04) 9px 10px)}
 .gal img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
-.gal figcaption{font:italic 400 .95rem var(--fb);color:var(--ink2);margin-top:9px}
+.gal figcaption{font:italic 400 .95rem/1.4 var(--fb);color:var(--ink2);margin-top:9px}
+.gal figure.cta{justify-content:center;align-items:flex-start;gap:12px;padding:22px 18px;background:var(--paper)}
+.gal figure.cta h3{font-size:1.7rem;margin:0}
+.gal figure.cta p{color:var(--ink2);font-size:1rem;line-height:1.45}
+.gal figure.cta .btn{min-height:44px;padding:0 18px;font-size:.95rem}
 
 /* visit */
 .loc{display:grid;gap:30px}
@@ -215,13 +219,17 @@ footer a{border-bottom:1px solid currentColor}
 <div class="card reveal"><svg class="ic"><use href="#i-badge"/></svg><h3>Quality accessories</h3><p>Reliable chargers, batteries and gear that last.</p></div>
 </div></div></section>
 
-<section class="alt"><div class="w">
-<div class="head reveal"><h2>Inside the shop</h2><div class="rule"></div></div>
+<section class="alt" id="workshop"><div class="w">
+<div class="head reveal"><h2>In the workshop</h2><div class="rule"></div><p class="sub">A look at the repairs and accessories we handle every day.</p></div>
 <div class="gal reveal">
-<figure><div class="ph">Photo coming soon<img src="photos/shop-counter.jpg" alt="Shop counter and electronics wall" loading="lazy" onerror="this.remove()"></div><figcaption>Shop counter and electronics wall</figcaption></figure>
-<figure><div class="ph">Photo coming soon<img src="photos/inside-shop.jpg" alt="Inside 4U Laptop Services" loading="lazy" onerror="this.remove()"></div><figcaption>Inside 4U Laptop Services</figcaption></figure>
-<figure><div class="ph">Photo coming soon<img src="photos/phone-cases.jpg" alt="Phone cases and accessories" loading="lazy" onerror="this.remove()"></div><figcaption>Phone cases and accessories</figcaption></figure>
-<figure><div class="ph">Photo coming soon<img src="photos/drones-vr-cctv.jpg" alt="Drones, VR and CCTV cameras" loading="lazy" onerror="this.remove()"></div><figcaption>Drones, VR and CCTV cameras</figcaption></figure>
+<figure><div class="ph"><img src="photos/bench-rework.jpg" alt="Technician repairing a laptop motherboard with a hot-air rework station" width="1000" height="1333" loading="lazy" decoding="async" style="object-position:50% 62%"></div><figcaption>Board-level repairs on our hot-air rework station</figcaption></figure>
+<figure><div class="ph"><img src="photos/office-install.jpg" alt="Microsoft Office installing on a Dell laptop" width="750" height="1333" loading="lazy" decoding="async" style="object-position:50% 32%"></div><figcaption>Microsoft Office installation and licensing</figcaption></figure>
+<figure><div class="ph"><img src="photos/laptop-charger.jpg" alt="Packaged 65W replacement laptop charger" width="1000" height="1333" loading="lazy" decoding="async"></div><figcaption>Replacement laptop chargers, in stock</figcaption></figure>
+<figure><div class="ph"><img src="photos/magsafe-adapter.jpg" alt="MagSafe power adapter box on a repair mat" width="1000" height="1333" loading="lazy" decoding="async" style="object-position:50% 70%"></div><figcaption>MagSafe power adapters for MacBooks</figcaption></figure>
+<figure><div class="ph"><img src="photos/macbook-repair.jpg" alt="MacBook Air on an anti-static repair mat with tools" width="1000" height="1333" loading="lazy" decoding="async"></div><figcaption>MacBook repairs on the workbench</figcaption></figure>
+<figure><div class="ph"><img src="photos/macbook-no-display.jpg" alt="MacBook Air with a blank screen on a repair mat" width="1000" height="1333" loading="lazy" decoding="async"></div><figcaption>Dead display? We diagnose it in store</figcaption></figure>
+<figure><div class="ph"><img src="photos/macbook-screen.jpg" alt="MacBook Air with a damaged, lined screen" width="1000" height="1333" loading="lazy" decoding="async"></div><figcaption>Damaged screen, ready for replacement</figcaption></figure>
+<figure class="cta"><h3>Your laptop next?</h3><p>Send us a message and we’ll tell you what it needs.</p><a class="btn b2" href="https://wa.me/27679288425?text=Hi%204U%20Laptop%20Services%2C%20I%20need%20help%20with%20my%20laptop" target="_blank" rel="noopener"><svg class="ic"><use href="#i-chat"/></svg>WhatsApp us</a></figure>
 </div></div></section>
 
 <section id="visit"><div class="w">
